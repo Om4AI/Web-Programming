@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="UTF-8">
+        <title>IT recruitment</title>
+        <link rel="stylesheet" href="prod_style.css">
+    </head>
+       
+    <body>
+        <h1>NeuralAi IT recruitment form</h1>
+        <form action="itrecruit.php" method="post"  enctype="multipart/form-data">
+        <div class="container">
+
+            <h2 style="margin-left: 30px;">Application form</h3>
+
+            <div class="row">
+                <div class="col-10">
+                    <label for="name">Name:</label>
+                </div>
+                <div class="col-90">
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required maxlength="50" minlength="2">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-10">
+                    <label for="quantity" required >Job Titles:</label>
+                </div>
+                <div class="col-90">
+                    <select style="margin-top:5px; padding: 8px;" name="jt" id="jt" required>
+                        <option value=" ">Roles:</option>
+                        <option value="Software Development Engineer(SDE)">Software Development Engineer(SDE)</option>
+                        <option value="Software Architect">Software Architect</option>
+                        <option value="Machine Learning Engineer">Machine Learning Engineer</option>
+                        <option value="Data Science Engineer">Data Science Engineer</option>
+                        <option value="Database Engineer">Database Engineer</option>
+                        <option value="Site Reliability Engineer(SRE)">Site Reliability Engineer(SRE)</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-10">
+                    <label for="">Resume:</label>
+                </div>
+                <div class="col-90">
+                    <input style="padding-left: 5px; padding-top: 5px;" type="file" name="resumeupload">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-10">
+                    <label for="">Photograph:</label>
+                </div>
+                <div class="col-90">
+                    <input style="padding-left: 5px; padding-top: 10px;" type="file" name="imgupload">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-10">
+                    <label  for="price">Digital Signature:</label>
+                </div>
+                <div class="col-90">
+                    <input style="padding-left: 5px; padding-top:15px;" type="file" name="imgupload1">
+                </div>
+            </div>
+            
+
+            
+            <div class="row">
+                <div class="col-10">
+                    <label for="dob">Date of Birth:</label>
+                </div>
+                <div class="col-90">
+                    <input type="Date" id="dob" name="dob" required>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col-10">
+                    <label for="mobile">Mobile:</label>
+                </div>
+                <div class="col-90">
+                    <input type="tel" id="mobile" name="mobile" placeholder="Only 10 digits are allowed" required  pattern="\d{10}">
+                </div>
+                <p style="font-size:small">Please enter a valid phone number</p>
+            </div>
+
+            <div class="row">
+                <div class="col-10">
+                    <label for="email">Email:</label>
+                </div>
+                <div class="col-90">
+                    <input type="email" id="email" name="email" placeholder="It should contain @,." required>
+                </div>
+                <p style="font-size:small">Please enter your email address</p>
+            </div>
+
+            <div class="row">
+                <div class="col-10">
+                    <label for="univ">University Name:</label>
+                </div>
+                <div class="col-90">
+                    <input style="margin-top: 15px;" type="text" id="univ" name="univ" placeholder="University name" required maxlength="50" minlength="2">
+                </div>
+            </div>
+
+            <div class="row">
+                <input type="submit" value="Submit" name="Submit">
+            </div> 
+
+            
+        </div>
+              
+        </div></form> 
+    </body>
+</html>
