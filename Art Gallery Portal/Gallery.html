@@ -1,0 +1,75 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body class="gallery">
+        <h1 style="color: black">The Gallery of Life</h1>
+        <div class="image_grid">
+            <img class="image_grid-col-2 image_grid-row-2"  src="https://images.unsplash.com/photo-1513364776144-60967b0f800f?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fGFydHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60alt="tiger">
+
+            <img id="myImg" src="https://images.unsplash.com/photo-1533142266415-ac591a4deae9?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTI2fHxhcnR8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="ART"  style="width:100%;max-width:300px">
+
+            <!-- The Modal -->
+            <div id="myModal" class="modal">
+                <span class="close">&times;</span>
+                <img class="modal-content" id="img01">
+                <div id="caption"></div>
+            </div>
+
+            <img src="https://images.unsplash.com/photo-1590477330477-9d4d4fe65316?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTl8fGFydHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="unsplash">
+
+            <img src="https://images.unsplash.com/photo-1578878703110-503a58cf210a?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nzl8fGFydHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="unsplash">
+
+            <img src="https://images.unsplash.com/photo-1517776832751-0a7e6993de03?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OTl8fGFydHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="eagle">
+
+        </div>
+
+
+        <script>
+            // Get the modal
+            var modal = document.getElementById("myModal");
+            
+            // Get the image and insert it inside the modal - use its "alt" text as a caption
+            var img = document.getElementById("myImg");
+            var modalImg = document.getElementById("img01");
+            var captionText = document.getElementById("caption");
+            img.onclick = function(){
+              modal.style.display = "block";
+              modalImg.src = this.src;
+              captionText.innerHTML = this.alt;
+            }
+            
+            // Get the <span> element that closes the modal
+            var span = document.getElementsByClassName("close")[0];
+            
+            // When the user clicks on <span> (x), close the modal
+            span.onclick = function() { 
+              modal.style.display = "none";
+            }
+        </script>
+
+        <div class="row">
+            <div class="column">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/3PZ65s2qLTE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="column">
+                <div class="card_g img_prop">
+                    <!-- <img class="imap" src="tesla.jpg" usemap="#image-map">
+                    <map name="image-map">
+                        <area target="_blank" alt="Solar Roof - Tesla" title="Solar Roof - Tesla" href="https://www.tesla.com/solarroof" coords="1333,347,27,35" shape="rect">
+                        <area target="_blank" alt="Tesla models" title="Tesla models" href="https://www.tesla.com/" coords="940,437,1335,698" shape="rect">
+                    </map> -->
+                    <a href="Events.html" target="_blank"><img class="imap" src="https://images.unsplash.com/photo-1622737133809-d95047b9e673?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=889&q=80" alt="" height=200px>
+                    <div class="container" style="">
+                        <h2 class="home_event">3D Art</h2>
+                        <p class="home_event">With the years of different 2D artwork, artists now step into 3D art styles. Join us in our brand new talk on 3D computer created art.</p></a>
+                    </div></div>
+            </div>
+        </div>
+        
+        
+    
+        
+    </body>
+
+</html>
