@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Code by -->
+<!-- Name: Om Mule -->
+<!-- Reg No: 19BCE0439 -->
+
+<!DOCTYPE Insurance SYSTEM "Insurance.dtd">
+<Insurance>
+    <!-- Company Name -->
+    <cname>Neural Ai</cname>
+    <cname>LIC India</cname>
+
+    <!-- Names -->
+    <owner_name>
+        <fname>Om</fname>
+        <midname>Praful</midname>
+        <surname>Mule</surname>
+    </owner_name>
+
+    <owner_name>
+        <fname>Pratham</fname>
+        <midname>Suresh</midname>
+        <surname>Kumbhar</surname>
+    </owner_name>
+
+    <!-- Emails -->
+    <email>om@gmail.com</email>
+    <email>pratham@gmail.com</email>
+
+    <!-- Date of Birth -->
+    <dob>
+        <month>12</month>
+        <day>4</day>
+        <year>2001</year>
+    </dob>
+
+    <dob>
+        <month>6</month>
+        <day>7</day>
+        <year>2001</year>
+    </dob>
+
+    <!-- DOT(Department of Transportation)-->
+    <dept_trans>123</dept_trans>
+    <dept_trans>123</dept_trans>
+
+    <!-- License -->
+    <license>Yes</license>
+    <license>No</license>
+
+    <!-- License -->
+    <loss>Yes</loss>
+    <loss>No</loss>
+
+</Insurance>
