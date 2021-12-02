@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!ELEMENT Insurance (cname*,owner_name*,email*,dob*,dept_trans*,license*,loss*)>
+
+<!ELEMENT cname (#PCDATA)>
+<!ELEMENT owner_name (fname, midname, surname)>
+<!ELEMENT email (#PCDATA)>
+<!ELEMENT dob ((month, day, year)|(day,month, year))>
+<!ELEMENT dept_trans (#PCDATA)>
+<!ELEMENT license (#PCDATA)>
+<!ELEMENT loss (#PCDATA)>
+
+
+<!ELEMENT fname (#PCDATA)>
+<!ELEMENT midname (#PCDATA)>
+<!ELEMENT surname (#PCDATA)>
+
+<!ELEMENT month (#PCDATA)>
+<!ELEMENT day (#PCDATA)>
+<!ELEMENT year (#PCDATA)>
